@@ -1,0 +1,27 @@
+#GIT INSTALLATION
+#Author: Landmark Technology
+# Your Linux distribution should be either centos (7 or 8) or RHEL (7or 8)
+#Login as a root user (sudo su – or su)  and cd  /opt
+#The below command will download and install all required development libraries to your system. 
+cd  /opt
+yum -y remove git
+yum groupinstall "Development Tools" -y
+yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel curl-devel -y
+yum install wget tar zip unzip -y
+#Open below URL and select the specific version and right click on that and click on Copy Link Address, then execute the wget command.
+#https://github.com/git/git/releases
+wget https://github.com/git/git/archive/v2.28.0.tar.gz 
+tar -zxvf  v2.28.0.tar.gz
+cd git-2.28.0
+make configure
+./configure --prefix=/usr/local
+#The make install command will copy the built program, and its libraries and documentation, to the correct locations.
+make install
+git config --global user.name "Landmark Technology"
+git config --global user.email "mylandmarktech@gmail.com"
+git config --global --list
+git --version
+# yum install git -y 
+
+
+
