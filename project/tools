@@ -1,0 +1,35 @@
+cat > tools
+aws
+landmark technology
+SERVERLESS
+Git - Versoning
+GitHub, BitBucket, GitLab - DVCS
+Build
+Maven
+ANt
+AWS CodeBuild
+Build - output
+jar - standalone
+war - web
+ear - enterprise
+SonarQube/JFrog
+Code Quality
+Private - Nexus/JFrog/DPR/ECR
+public - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
